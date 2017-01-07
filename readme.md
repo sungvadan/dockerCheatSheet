@@ -1,15 +1,22 @@
 #commande boot2docker
-  boot2docker up  # Permet de démarrer la machine contenant docker
+`boot2docker up  # Permet de démarrer la machine contenant docker`
+
 `boot2docker stop # Permet de l'arrêter`
+
 `boot2docker ssh  # Permet de se connecter en ssh `
+
 `boot2docker ip # Permet d'obtenir l'ip de la machine`
+
 `boot2docker ip # afficher ip de docker`
 
 #Monter le dossier de partage
 
 `cd /var/lib/boot2docker/`
+
 `touch /var/lib/boot2docker/bootlocal.sh`
+
 `mkdir /var/www`
+
 `mount -t vboxsf www /var/www`
 
 
