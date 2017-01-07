@@ -1,5 +1,5 @@
 #commande boot2docker
-`boot2docker up  # Permet de démarrer la machine contenant docker`
+  boot2docker up  # Permet de démarrer la machine contenant docker
 `boot2docker stop # Permet de l'arrêter`
 `boot2docker ssh  # Permet de se connecter en ssh `
 `boot2docker ip # Permet d'obtenir l'ip de la machine`
