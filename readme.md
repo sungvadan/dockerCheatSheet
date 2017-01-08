@@ -9,7 +9,7 @@
 
 `boot2docker ip # afficher ip de docker`
 
-#Monter le dossier de partage
+#configurer boot2docker
 
 `cd /var/lib/boot2docker/`
 
@@ -19,8 +19,18 @@
 
 `mount -t vboxsf www /var/www`
 
+`echo 'alias composer=\'docker run -ti --rm -v $(pwd):/app composer/composer\'' >> home/docker/.ashrc`
+
 
 #commande docker
+
+## run un  contenneur
+1. `docker run --name apache --rm -p 80:80 -v /var/www:/app tutum/apache-php -e ALLOW_OVERRIDE=true`
+    * `-rm #supprimer machine lors d'arrêter`
+    * `-p port`
+    * `-v monter dossierr`
+    * `-e variable environnement`
+    
 
 
 
@@ -34,6 +44,6 @@
 ## lister les contenneurs qui sont en train de tourner
 `docker ps -a`
 
-## run un  contenneur
-`docker run --name apache --rm -p 80:80 tutum/apache-php`
+
+
 
